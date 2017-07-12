@@ -51,8 +51,6 @@ def get_condition():
 
 def get_outside():
     """Polls the weather data from openweathermap API and returns values for global usage.
-
-    Will be refactored to use pyowm instead of requests.
     """
     global outside_temp
     global outside_condition
