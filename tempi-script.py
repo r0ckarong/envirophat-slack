@@ -100,7 +100,6 @@ def write_json():
     date = datetime.now().strftime('%d-%m-%Y')
 
     json_file = open('weather.json', 'w')
-    weather = [json_file]
     data = {
     'temperature':tempmed,
     'outside_temp':outside_temp,
@@ -109,8 +108,11 @@ def write_json():
     'time':currtime,
     'date':date
     }
+    datarray = []
+    datarray.append(data)
+
     json_file.append(data)
-    #json.dump(data, json_file, indent=4)
+    json.dump(dataarray, weather, indent=4)
     json_file.flush()
 
 def perform_update():
