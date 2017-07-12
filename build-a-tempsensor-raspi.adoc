@@ -1,0 +1,83 @@
+Needs python libs
+
+python dev
+requests
+vcgencmd
+time
+math
+datetime
+envirophat
+schedule
+
+Based on
+
+Raspberry Pi Zero W
+Pimoroni enviropHAT
+
+pip install schedule vcgendcmd requests pyowm
+
+
+Wolfram Alpha Solve for Temp
+
+x = raw temp
+y = Measured Temp
+z = cpu temp
+
+x = 32.434425, y = 27.0, z =  36.300000, y = x - ((z - x)/a)
+
+
+== Emojis to use
+
+=== Conditions
+:sunny:
+:mostly_sunny:
+:partly_sunny:
+:barely_sunny:
+:partly_sunny_rain:
+:cloud:
+:rain_cloud:
+:thunder_cloud_and_rain:
+
+:snow_cloud:
+:snowflake:
+
+:full_moon:
+
+:fog:
+
+:umbrella:
+
+:fire:
+
+:clockn: Per time
+
+=== Faces
+
+:smile: sunny, warm
+:smiley: sunny, warmer
+:sweat: sunny, hot
+:sweat_smile: sunny, hotter
+:simple_smile:
+:neutral_face: cloudy, not too hot
+:sunglasses: Sunny, really hot
+
+:disappointed: cold, rain
+:unamused: cold
+:confused: fog
+
+
+== TODO
+
+* build data collection script
+* store in JSON
+* every 15mins write to file and create average
+* read averages and calculate thresholds
+* define limits when to send message
+* map OWM weather ids/descriptions to Slack emoji
+* figure out how to deploy webhook variable in screen session
+
+
+== DONE
+
+* read every 30 sec
+* send weather report at 0800 1200
