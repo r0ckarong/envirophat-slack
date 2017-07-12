@@ -7,11 +7,8 @@ import requests
 import pyowm
 import schedule
 
-
 from datetime import datetime
 from envirophat import light, weather, leds
-
-# raspi = :raspberry_pi:
 
 # Declaring global variables
 temp = 0
@@ -62,6 +59,9 @@ def get_outside():
     outside_condition = w.get_detailed_status().title().encode()
 
 def get_temps():
+    """Get measured temperatures from envirophat and raspberry pi CPU sensor.
+    Calculate offset measured temp. Format for further use.
+    """
     global cpu_temp
     global temp
     global tempmed
@@ -74,6 +74,9 @@ def get_temps():
     tempmed = '{:.1f}'.format(round(temp_calibrated, 2))
 
 def send_message():
+    """Build message string from calculated and collected values.
+    Post request to Slack Webhook as JSON.
+    """
     mytime = str(currtime)
     out_temp = str(outside_temp)
     med = str(tempmed)
@@ -91,6 +94,13 @@ def write_file():
     out.write('%s\t%f\t%f\t%s\t%f\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp))
 
 def write_json():
+    """TODO
+
+    Supposed to write JSON data structure into file. Will be used as input
+    for visualization.
+
+    Currently unfinished.
+    """
     date = datetime.now().strftime('%d-%m-%Y')
 
     json_file = open('weather.json', 'w')
@@ -108,6 +118,8 @@ def write_json():
     json_file.flush()
 
 def perform_update():
+    """Update weather data and write entries to file(s).
+    """
     global currtime
     currtime = datetime.now().strftime('%H:%M:%S')
     lux = light.light()
@@ -123,15 +135,13 @@ def perform_update():
 # Schedule messages
 # schedule.every().day.at("08:00").do(send_message)
 # schedule.every().day.at("12:00").do(send_message)
-# schedule.every().hour.at(":00").do(send_message)
-
+schedule.every().hour.at(":00").do(send_message)
 
 try:
     while True:
         perform_update()
 
         schedule.run_pending()
-        send_message()
 
         time.sleep(30)
 
