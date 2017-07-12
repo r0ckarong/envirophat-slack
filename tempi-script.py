@@ -77,17 +77,13 @@ def send_message():
     """Build message string from calculated and collected values.
     Post request to Slack Webhook as JSON.
     """
-    mytime = str(currtime)
-    out_temp = str(outside_temp)
-    med = str(tempmed)
+    message = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s C\nInside the office we have a temperature of %s C"""
 
-    post = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s C\nInside the office we have a temperature of %s C"""
-
-    message = post % (mytime, zip_code, outside_condition, out_temp, med)
+    post = message % (str(currtime), zip_code, outside_condition, str(outside_temp), str(tempmed))
 
     # print message
 
-    payload = {'text':message}
+    payload = {'text':post}
     requests.post(slack_webhook, json=payload)
 
 def write_file():
