@@ -1,0 +1,434 @@
+[
+  {
+    "200": {
+      "description": "thunderstorm with light rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "201": {
+      "description": "thunderstorm with rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "202": {
+      "description": "thunderstorm with heavy rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "210": {
+      "description": "light thunderstorm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "211": {
+      "description": "thunderstorm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "212": {
+      "description": "heavy thunderstorm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "221": {
+      "description": "ragged thunderstorm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "230": {
+      "description": "thunderstorm with light drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "231": {
+      "description": "thunderstorm with drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "232": {
+      "description": "thunderstorm with heavy drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "300": {
+      "description": "light intensity drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "301": {
+      "description": "drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "302": {
+      "description": "heavy intensity drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "310": {
+      "description": "light intensity drizzle rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "311": {
+      "description": "drizzle rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "312": {
+      "description": "heavy intensity drizzle rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "313": {
+      "description": "shower rain and drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "314": {
+      "description": "heavy shower rain and drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "321": {
+      "description": "shower drizzle",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "500": {
+      "description": "light rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "501": {
+      "description": "moderate rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "502": {
+      "description": "heavy intensity rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "503": {
+      "description": "very heavy rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "504": {
+      "description": "extreme rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "511": {
+      "description": "freezing rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "520": {
+      "description": "light intensity shower rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "521": {
+      "description": "shower rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "522": {
+      "description": "heavy intensity shower rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "531": {
+      "description": "ragged shower rain",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "601": {
+      "description": "snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "602": {
+      "description": "heavy snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "611": {
+      "description": "sleet",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "612": {
+      "description": "shower sleet",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "615": {
+      "description": "light rain and snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "616": {
+      "description": "rain and snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "620": {
+      "description": "light shower snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "621": {
+      "description": "shower snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "622": {
+      "description": "heavy shower snow",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "701": {
+      "description": "mist",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "711": {
+      "description": "smoke",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "721": {
+      "description": "haze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "731": {
+      "description": "sand, dust whirls",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "741": {
+      "description": "fog",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "751": {
+      "description": "sand",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "761": {
+      "description": "dust",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "762": {
+      "description": "volcanic ash",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "771": {
+      "description": "squalls",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "781": {
+      "description": "tornado",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "800": {
+      "description": "clear sky",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "801": {
+      "description": "few clouds",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "802": {
+      "description": "scattered clouds",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "803": {
+      "description": "broken clouds",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "804": {
+      "description": "overcast clouds",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "900": {
+      "description": "tornado",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "901": {
+      "description": "tropical storm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "902": {
+      "description": "hurricane",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "903": {
+      "description": "cold",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "904": {
+      "description": "hot",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "905": {
+      "description": "windy",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "906": {
+      "description": "hail",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "951": {
+      "description": "calm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "952": {
+      "description": "light breeze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "953": {
+      "description": "gentle breeze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "954": {
+      "description": "moderate breeze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "955": {
+      "description": "fresh breeze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "956": {
+      "description": "strong breeze",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "957": {
+      "description": "high wind, near gale",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "958": {
+      "description": "gale",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "959": {
+      "description": "severe gale",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "960": {
+      "description": "storm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "961": {
+      "description": "violent storm",
+      "icon": ":emoji"
+    }
+  },
+  {
+    "962": {
+      "description": "hurricane",
+      "icon": ":emoji"
+    }
+  }
+]
