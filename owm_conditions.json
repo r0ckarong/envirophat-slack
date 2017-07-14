@@ -2,433 +2,433 @@
   {
     "200": {
       "description": "thunderstorm with light rain",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "201": {
       "description": "thunderstorm with rain",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain::umbrella_with_rain_drops:"
     }
   },
   {
     "202": {
       "description": "thunderstorm with heavy rain",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain::shower:"
     }
   },
   {
     "210": {
       "description": "light thunderstorm",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "211": {
       "description": "thunderstorm",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "212": {
       "description": "heavy thunderstorm",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain::zap:"
     }
   },
   {
     "221": {
       "description": "ragged thunderstorm",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "230": {
       "description": "thunderstorm with light drizzle",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "231": {
       "description": "thunderstorm with drizzle",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "232": {
       "description": "thunderstorm with heavy drizzle",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "300": {
       "description": "light intensity drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::closed_umbrella:"
     }
   },
   {
     "301": {
       "description": "drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "302": {
       "description": "heavy intensity drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "310": {
       "description": "light intensity drizzle rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::closed_umbrella:"
     }
   },
   {
     "311": {
       "description": "drizzle rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::closed_umbrella:"
     }
   },
   {
     "312": {
       "description": "heavy intensity drizzle rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "313": {
       "description": "shower rain and drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "314": {
       "description": "heavy shower rain and drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "321": {
       "description": "shower drizzle",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "500": {
       "description": "light rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "501": {
       "description": "moderate rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "502": {
       "description": "heavy intensity rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "503": {
       "description": "very heavy rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "504": {
       "description": "extreme rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "511": {
       "description": "freezing rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::snowflake:"
     }
   },
   {
     "520": {
       "description": "light intensity shower rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "521": {
       "description": "shower rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "522": {
       "description": "heavy intensity shower rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "531": {
       "description": "ragged shower rain",
-      "icon": ":emoji"
+      "icon": ":rain_cloud:"
     }
   },
   {
     "601": {
       "description": "snow",
-      "icon": ":emoji"
+      "icon": ":snowman:"
     }
   },
   {
     "602": {
       "description": "heavy snow",
-      "icon": ":emoji"
+      "icon": ":snowman::pray:"
     }
   },
   {
     "611": {
       "description": "sleet",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud:"
     }
   },
   {
     "612": {
       "description": "shower sleet",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud::droplet:"
     }
   },
   {
     "615": {
       "description": "light rain and snow",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud:"
     }
   },
   {
     "616": {
       "description": "rain and snow",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud:"
     }
   },
   {
     "620": {
       "description": "light shower snow",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud:"
     }
   },
   {
     "621": {
       "description": "shower snow",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud:"
     }
   },
   {
     "622": {
       "description": "heavy shower snow",
-      "icon": ":emoji"
+      "icon": ":snowflake::rain_cloud::pray:"
     }
   },
   {
     "701": {
       "description": "mist",
-      "icon": ":emoji"
+      "icon": ":fog:"
     }
   },
   {
     "711": {
       "description": "smoke",
-      "icon": ":emoji"
+      "icon": ":fire::cloud:"
     }
   },
   {
     "721": {
       "description": "haze",
-      "icon": ":emoji"
+      "icon": ":fog:"
     }
   },
   {
     "731": {
       "description": "sand, dust whirls",
-      "icon": ":emoji"
+      "icon": ":mask:"
     }
   },
   {
     "741": {
       "description": "fog",
-      "icon": ":emoji"
+      "icon": ":fog:"
     }
   },
   {
     "751": {
       "description": "sand",
-      "icon": ":emoji"
+      "icon": ":mask:"
     }
   },
   {
     "761": {
       "description": "dust",
-      "icon": ":emoji"
+      "icon": ":mask:"
     }
   },
   {
     "762": {
       "description": "volcanic ash",
-      "icon": ":emoji"
+      "icon": ":volcano:"
     }
   },
   {
     "771": {
       "description": "squalls",
-      "icon": ":emoji"
+      "icon": ":dash:"
     }
   },
   {
     "781": {
       "description": "tornado",
-      "icon": ":emoji"
+      "icon": ":tornado:"
     }
   },
   {
     "800": {
       "description": "clear sky",
-      "icon": ":emoji"
+      "icon": ":sunny:"
     }
   },
   {
     "801": {
       "description": "few clouds",
-      "icon": ":emoji"
+      "icon": ":mostly_sunny:"
     }
   },
   {
     "802": {
       "description": "scattered clouds",
-      "icon": ":emoji"
+      "icon": ":mostly_sunny:"
     }
   },
   {
     "803": {
       "description": "broken clouds",
-      "icon": ":emoji"
+      "icon": ":partly_sunny:"
     }
   },
   {
     "804": {
       "description": "overcast clouds",
-      "icon": ":emoji"
+      "icon": ":barely_sunny:"
     }
   },
   {
     "900": {
       "description": "tornado",
-      "icon": ":emoji"
+      "icon": ":tornado:"
     }
   },
   {
     "901": {
       "description": "tropical storm",
-      "icon": ":emoji"
+      "icon": ":thunder_cloud_and_rain:"
     }
   },
   {
     "902": {
       "description": "hurricane",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::dash:"
     }
   },
   {
     "903": {
       "description": "cold",
-      "icon": ":emoji"
+      "icon": ":snowflake:"
     }
   },
   {
     "904": {
       "description": "hot",
-      "icon": ":emoji"
+      "icon": ":sunny::fire:"
     }
   },
   {
     "905": {
       "description": "windy",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "906": {
       "description": "hail",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::face_with_head_bandage:"
     }
   },
   {
     "951": {
       "description": "calm",
-      "icon": ":emoji"
+      "icon": ":zzz:"
     }
   },
   {
     "952": {
       "description": "light breeze",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "953": {
       "description": "gentle breeze",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "954": {
       "description": "moderate breeze",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "955": {
       "description": "fresh breeze",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "956": {
       "description": "strong breeze",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "957": {
       "description": "high wind, near gale",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "958": {
       "description": "gale",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "959": {
       "description": "severe gale",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "960": {
       "description": "storm",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "961": {
       "description": "violent storm",
-      "icon": ":emoji"
+      "icon": ":wind_blowing_face:"
     }
   },
   {
     "962": {
       "description": "hurricane",
-      "icon": ":emoji"
+      "icon": ":rain_cloud::dash:"
     }
   }
 ]
