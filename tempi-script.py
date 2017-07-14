@@ -19,6 +19,7 @@ cpu_temp = 0
 outside_temp = 0
 outside_location = ""
 outside_condition = ""
+emoji = ""
 currtime = datetime.now().strftime('%H:%M:%S')
 
 # Slack Webhook stored in filesystem
@@ -41,32 +42,30 @@ out.write('Time\tTemp (Sensor)\tTemp (Calibrated)\tTemp (Rounded)\tCPU Temp\n')
 
 def get_condition():
     """TODO
-
     Reads current condition and maps emoji and icons to the message which is to be sent to Slack.
+    Polls the weather data from openweathermap API and returns values for global usage.
     """
-    get_detailed_status()
-    get_weather_code()
 
-    file = open("owm_conditions.json","r")
-    conditions = json.load(file)
-
-    # Fill in the status code from the OWM API
-    code =
-    condition =
-    emoji =
-    ast.literal_eval()
-
-def get_outside():
-    """Polls the weather data from openweathermap API and returns values for global usage.
-    """
     global outside_temp
     global outside_condition
     global outside_location
+    global emoji
+
+    condfile = "owm_conditions.json"
+    try:
+        conditions = open(condfile,"r")
+    except IOError:
+        print "Condition map " + condfile + " not found!"
+
+    cond = json.load(conditions)
 
     observation = owm.weather_at_zip_code(zip_code,country_code)
     w = observation.get_weather()
+    outside_location = observation.get_location().get_name()
     outside_temp = w.get_temperature(unit)['temp']
-    outside_condition = w.get_detailed_status().title().encode()
+    code = w.get_weather_code()
+    outside_condition = ast.literal_eval(cond[str(code)])[0]
+    emoji = ast.literal_eval(cond[str(code)])[1]
 
 def get_temps():
     """Get measured temperatures from envirophat and raspberry pi CPU sensor.
@@ -87,9 +86,9 @@ def send_message():
     """Build message string from calculated and collected values.
     Post request to Slack Webhook as JSON.
     """
-    message = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s C\nInside the office we have a temperature of %s C"""
+    message = """It is currently %s in :flag-"""+str(country_code)+""":%s, %s\nOutside there is "%s" (%s) at:thermometer:%s C\nInside the office we have a temperature of :thermometer:%s C"""
 
-    post = message % (str(currtime), zip_code, outside_condition, str(outside_temp), str(tempmed))
+    post = message % (str(currtime), zip_code, str(outside_location), str(outside_condition.title()), str(emoji), str(outside_temp), str(tempmed))
 
     # print message
 
@@ -132,7 +131,7 @@ def perform_update():
     currtime = datetime.now().strftime('%H:%M:%S')
     lux = light.light()
     leds.on()
-    get_outside()
+    get_condition()
     get_temps()
     write_file()
     # write_json()
