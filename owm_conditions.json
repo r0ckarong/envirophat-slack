@@ -1,434 +1,74 @@
 [
-  {
-    "200": {
-      "description": "thunderstorm with light rain",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "201": {
-      "description": "thunderstorm with rain",
-      "icon": ":thunder_cloud_and_rain::umbrella_with_rain_drops:"
-    }
-  },
-  {
-    "202": {
-      "description": "thunderstorm with heavy rain",
-      "icon": ":thunder_cloud_and_rain::shower:"
-    }
-  },
-  {
-    "210": {
-      "description": "light thunderstorm",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "211": {
-      "description": "thunderstorm",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "212": {
-      "description": "heavy thunderstorm",
-      "icon": ":thunder_cloud_and_rain::zap:"
-    }
-  },
-  {
-    "221": {
-      "description": "ragged thunderstorm",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "230": {
-      "description": "thunderstorm with light drizzle",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "231": {
-      "description": "thunderstorm with drizzle",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "232": {
-      "description": "thunderstorm with heavy drizzle",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "300": {
-      "description": "light intensity drizzle",
-      "icon": ":rain_cloud::closed_umbrella:"
-    }
-  },
-  {
-    "301": {
-      "description": "drizzle",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "302": {
-      "description": "heavy intensity drizzle",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "310": {
-      "description": "light intensity drizzle rain",
-      "icon": ":rain_cloud::closed_umbrella:"
-    }
-  },
-  {
-    "311": {
-      "description": "drizzle rain",
-      "icon": ":rain_cloud::closed_umbrella:"
-    }
-  },
-  {
-    "312": {
-      "description": "heavy intensity drizzle rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "313": {
-      "description": "shower rain and drizzle",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "314": {
-      "description": "heavy shower rain and drizzle",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "321": {
-      "description": "shower drizzle",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "500": {
-      "description": "light rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "501": {
-      "description": "moderate rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "502": {
-      "description": "heavy intensity rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "503": {
-      "description": "very heavy rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "504": {
-      "description": "extreme rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "511": {
-      "description": "freezing rain",
-      "icon": ":rain_cloud::snowflake:"
-    }
-  },
-  {
-    "520": {
-      "description": "light intensity shower rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "521": {
-      "description": "shower rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "522": {
-      "description": "heavy intensity shower rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "531": {
-      "description": "ragged shower rain",
-      "icon": ":rain_cloud:"
-    }
-  },
-  {
-    "601": {
-      "description": "snow",
-      "icon": ":snowman:"
-    }
-  },
-  {
-    "602": {
-      "description": "heavy snow",
-      "icon": ":snowman::pray:"
-    }
-  },
-  {
-    "611": {
-      "description": "sleet",
-      "icon": ":snowflake::rain_cloud:"
-    }
-  },
-  {
-    "612": {
-      "description": "shower sleet",
-      "icon": ":snowflake::rain_cloud::droplet:"
-    }
-  },
-  {
-    "615": {
-      "description": "light rain and snow",
-      "icon": ":snowflake::rain_cloud:"
-    }
-  },
-  {
-    "616": {
-      "description": "rain and snow",
-      "icon": ":snowflake::rain_cloud:"
-    }
-  },
-  {
-    "620": {
-      "description": "light shower snow",
-      "icon": ":snowflake::rain_cloud:"
-    }
-  },
-  {
-    "621": {
-      "description": "shower snow",
-      "icon": ":snowflake::rain_cloud:"
-    }
-  },
-  {
-    "622": {
-      "description": "heavy shower snow",
-      "icon": ":snowflake::rain_cloud::pray:"
-    }
-  },
-  {
-    "701": {
-      "description": "mist",
-      "icon": ":fog:"
-    }
-  },
-  {
-    "711": {
-      "description": "smoke",
-      "icon": ":fire::cloud:"
-    }
-  },
-  {
-    "721": {
-      "description": "haze",
-      "icon": ":fog:"
-    }
-  },
-  {
-    "731": {
-      "description": "sand, dust whirls",
-      "icon": ":mask:"
-    }
-  },
-  {
-    "741": {
-      "description": "fog",
-      "icon": ":fog:"
-    }
-  },
-  {
-    "751": {
-      "description": "sand",
-      "icon": ":mask:"
-    }
-  },
-  {
-    "761": {
-      "description": "dust",
-      "icon": ":mask:"
-    }
-  },
-  {
-    "762": {
-      "description": "volcanic ash",
-      "icon": ":volcano:"
-    }
-  },
-  {
-    "771": {
-      "description": "squalls",
-      "icon": ":dash:"
-    }
-  },
-  {
-    "781": {
-      "description": "tornado",
-      "icon": ":tornado:"
-    }
-  },
-  {
-    "800": {
-      "description": "clear sky",
-      "icon": ":sunny:"
-    }
-  },
-  {
-    "801": {
-      "description": "few clouds",
-      "icon": ":mostly_sunny:"
-    }
-  },
-  {
-    "802": {
-      "description": "scattered clouds",
-      "icon": ":mostly_sunny:"
-    }
-  },
-  {
-    "803": {
-      "description": "broken clouds",
-      "icon": ":partly_sunny:"
-    }
-  },
-  {
-    "804": {
-      "description": "overcast clouds",
-      "icon": ":barely_sunny:"
-    }
-  },
-  {
-    "900": {
-      "description": "tornado",
-      "icon": ":tornado:"
-    }
-  },
-  {
-    "901": {
-      "description": "tropical storm",
-      "icon": ":thunder_cloud_and_rain:"
-    }
-  },
-  {
-    "902": {
-      "description": "hurricane",
-      "icon": ":rain_cloud::dash:"
-    }
-  },
-  {
-    "903": {
-      "description": "cold",
-      "icon": ":snowflake:"
-    }
-  },
-  {
-    "904": {
-      "description": "hot",
-      "icon": ":sunny::fire:"
-    }
-  },
-  {
-    "905": {
-      "description": "windy",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "906": {
-      "description": "hail",
-      "icon": ":rain_cloud::face_with_head_bandage:"
-    }
-  },
-  {
-    "951": {
-      "description": "calm",
-      "icon": ":zzz:"
-    }
-  },
-  {
-    "952": {
-      "description": "light breeze",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "953": {
-      "description": "gentle breeze",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "954": {
-      "description": "moderate breeze",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "955": {
-      "description": "fresh breeze",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "956": {
-      "description": "strong breeze",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "957": {
-      "description": "high wind, near gale",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "958": {
-      "description": "gale",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "959": {
-      "description": "severe gale",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "960": {
-      "description": "storm",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "961": {
-      "description": "violent storm",
-      "icon": ":wind_blowing_face:"
-    }
-  },
-  {
-    "962": {
-      "description": "hurricane",
-      "icon": ":rain_cloud::dash:"
-    }
-  }
+{"200":"['thunderstorm with light rain',':thunder_cloud_and_rain:']"},
+{"201":"['thunderstorm with rain',':thunder_cloud_and_rain::umbrella_with_rain_drops:']"},
+{"202":"['thunderstorm with heavy rain',':thunder_cloud_and_rain::shower:']"},
+{"210":"['light thunderstorm',':thunder_cloud_and_rain:']"},
+{"211":"['thunderstorm',':thunder_cloud_and_rain:']"},
+{"212":"['heavy thunderstorm',':thunder_cloud_and_rain::zap:']"},
+{"221":"['ragged thunderstorm',':thunder_cloud_and_rain:']"},
+{"230":"['thunderstorm with light drizzle',':thunder_cloud_and_rain:']"},
+{"231":"['thunderstorm with drizzle',':thunder_cloud_and_rain:']"},
+{"232":"['thunderstorm with heavy drizzle',':thunder_cloud_and_rain:']"},
+{"300":"['light intensity drizzle',':rain_cloud::closed_umbrella:']"},
+{"301":"['drizzle',':rain_cloud:']"},
+{"302":"['heavy intensity drizzle',':rain_cloud:']"},
+{"310":"['light intensity drizzle rain',':rain_cloud::closed_umbrella:']"},
+{"311":"['drizzle rain',':rain_cloud::closed_umbrella:']"},
+{"312":"['heavy intensity drizzle rain',':rain_cloud:']"},
+{"313":"['shower rain and drizzle',':rain_cloud:']"},
+{"314":"['heavy shower rain and drizzle',':rain_cloud:']"},
+{"321":"['shower drizzle',':rain_cloud:']"},
+{"500":"['light rain',':rain_cloud:']"},
+{"501":"['moderate rain',':rain_cloud:']"},
+{"502":"['heavy intensity rain',':rain_cloud:']"},
+{"503":"['very heavy rain',':rain_cloud:']"},
+{"504":"['extreme rain',':rain_cloud:']"},
+{"511":"['freezing rain',':rain_cloud::snowflake:']"},
+{"520":"['light intensity shower rain',':rain_cloud:']"},
+{"521":"['shower rain',':rain_cloud:']"},
+{"522":"['heavy intensity shower rain',':rain_cloud:']"},
+{"531":"['ragged shower rain',':rain_cloud:']"},
+{"601":"['snow',':snowman:']"},
+{"602":"['heavy snow',':snowman::pray:']"},
+{"611":"['sleet',':snowflake::rain_cloud:']"},
+{"612":"['shower sleet',':snowflake::rain_cloud::droplet:']"},
+{"615":"['light rain and snow',':snowflake::rain_cloud:']"},
+{"616":"['rain and snow',':snowflake::rain_cloud:']"},
+{"620":"['light shower snow',':snowflake::rain_cloud:']"},
+{"621":"['shower snow',':snowflake::rain_cloud:']"},
+{"622":"['heavy shower snow',':snowflake::rain_cloud::pray:']"},
+{"701":"['mist',':fog:']"},
+{"711":"['smoke',':fire::cloud:']"},
+{"721":"['haze',':fog:']"},
+{"731":"['sand, dust whirls',':mask:']"},
+{"741":"['fog',':fog:']"},
+{"751":"['sand',':mask:']"},
+{"761":"['dust',':mask:']"},
+{"762":"['volcanic ash',':volcano:']"},
+{"771":"['squalls',':dash:']"},
+{"781":"['tornado',':tornado:']"},
+{"800":"['clear sky',':sunny:']"},
+{"801":"['few clouds',':mostly_sunny:']"},
+{"802":"['scattered clouds',':mostly_sunny:']"},
+{"803":"['broken clouds',':partly_sunny:']"},
+{"804":"['overcast clouds',':barely_sunny:']"},
+{"900":"['tornado',':tornado:']"},
+{"901":"['tropical storm',':thunder_cloud_and_rain:']"},
+{"902":"['hurricane',':rain_cloud::dash:']"},
+{"903":"['cold',':snowflake:']"},
+{"904":"['hot',':sunny::fire:']"},
+{"905":"['windy',':wind_blowing_face:']"},
+{"906":"['hail',':rain_cloud::face_with_head_bandage:']"},
+{"951":"['calm',':zzz:']"},
+{"952":"['light breeze',':wind_blowing_face:']"},
+{"953":"['gentle breeze',':wind_blowing_face:']"},
+{"954":"['moderate breeze',':wind_blowing_face:']"},
+{"955":"['fresh breeze',':wind_blowing_face:']"},
+{"956":"['strong breeze',':wind_blowing_face:']"},
+{"957":"['high wind, near gale',':wind_blowing_face:']"},
+{"958":"['gale',':wind_blowing_face:']"},
+{"959":"['severe gale',':wind_blowing_face:']"},
+{"960":"['storm',':wind_blowing_face:']"},
+{"961":"['violent storm',':wind_blowing_face:']"},
+{"962":"['hurricane',':rain_cloud::dash:']"}
 ]

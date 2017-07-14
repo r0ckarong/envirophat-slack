@@ -6,6 +6,7 @@ import json
 import requests
 import pyowm
 import schedule
+import ast
 
 from datetime import datetime
 from envirophat import light, weather, leds
@@ -45,6 +46,15 @@ def get_condition():
     """
     get_detailed_status()
     get_weather_code()
+
+    file = open("owm_conditions.json","r")
+    conditions = json.load(file)
+
+    # Fill in the status code from the OWM API
+    code =
+    condition =
+    emoji =
+    ast.literal_eval()
 
 def get_outside():
     """Polls the weather data from openweathermap API and returns values for global usage.
