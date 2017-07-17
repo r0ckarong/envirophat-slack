@@ -1,0 +1,9 @@
+== TODO
+
+* Finish emoji parsing
+* Finish JSON data storage
+* Add data storage rotation
+* Add exception handling for broken internet connection (IOError from owm api)
+
+
+== DONE
