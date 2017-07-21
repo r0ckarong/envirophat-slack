@@ -62,7 +62,7 @@ def get_condition():
     observation = owm.weather_at_zip_code(zip_code,country_code)
     w = observation.get_weather()
     outside_location = observation.get_location().get_name()
-    outside_temp = w.get_temperature(unit)['temp']
+    outside_temp = round(w.get_temperature(unit)['temp'], 1)
     code = w.get_weather_code()
     outside_condition = ast.literal_eval(cond[str(code)])[0]
     emoji = ast.literal_eval(cond[str(code)])[1]
