@@ -75,9 +75,28 @@ x = 32.434425, y = 27.0, z =  36.300000, y = x - ((z - x)/a)
 * define limits when to send message
 * map OWM weather ids/descriptions to Slack emoji
 * figure out how to deploy webhook variable in screen session
-
+* build error handling
 
 == DONE
 
 * read every 30 sec
 * send weather report at 0800 1200
+
+----
+Traceback (most recent call last):
+  File "tempi-script.py", line 149, in <module>
+    perform_update()
+  File "tempi-script.py", line 134, in perform_update
+    get_condition()
+  File "tempi-script.py", line 62, in get_condition
+    observation = owm.weather_at_zip_code(zip_code,country_code)
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/webapi25/owm25.py", line 282, in weather_at_zip_code
+    'lang': self._language})
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/commons/weather_client.py", line 94, in call_API
+    return self._lookup_cache_or_invoke_API(self._cache, url, timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/commons/weather_client.py", line 65, in _lookup_cache_or_invoke_API
+    raise api_call_error.APICallError(str(e), e)
+pyowm.exceptions.api_call_error.APICallError: Exception in calling OWM web API.
+Reason: <urlopen error [Errno -2] Name or service not known>
+Caused by: <urlopen error [Errno -2] Name or service not known>
+----
