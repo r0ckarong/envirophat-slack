@@ -5,7 +5,7 @@ import os
 import json
 import requests
 import pyowm
-from pyowm.exceptions import APICallError
+from pyowm.exceptions.api_call_error import APICallError
 import schedule
 import ast
 
