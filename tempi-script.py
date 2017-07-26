@@ -146,11 +146,12 @@ def perform_update():
 schedule.every().hour.at(":00").do(send_message)
 
 try:
-    perform_update()
+    while True:
+        perform_update()
 
-    schedule.run_pending()
+        schedule.run_pending()
 
-    time.sleep(30)
+        time.sleep(30)
 
 except APICallError:
     print("Error calling OWM API.")
