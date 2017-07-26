@@ -5,12 +5,17 @@ import os
 import json
 import requests
 import pyowm
-from pyowm.exceptions.api_call_error import APICallError
 import schedule
 import ast
+import telepot
 
 from datetime import datetime
 from envirophat import light, weather, leds
+from pyowm.exceptions.api_call_error import APICallError
+
+# Bot stuff
+user_id = os.environ['USER_ID']
+bot = telepot.Bot(os.environ['BOT_TOKEN'])
 
 # Declaring global variables
 temp = 0
@@ -155,6 +160,7 @@ try:
 
 except APICallError:
     print("Error calling OWM API.")
+    bot.sendMessage(user_id,"Tempi Script has crashed.")
     time.sleep(300)
     pass
 
