@@ -5,6 +5,7 @@ import os
 import json
 import requests
 import pyowm
+from pyowm.exceptions import APICallError
 import schedule
 import ast
 
@@ -145,12 +146,16 @@ def perform_update():
 schedule.every().hour.at(":00").do(send_message)
 
 try:
-    while True:
-        perform_update()
+    perform_update()
 
-        schedule.run_pending()
+    schedule.run_pending()
 
-        time.sleep(30)
+    time.sleep(30)
+
+except APICallError:
+    print("Error calling OWM API.")
+    time.sleep(300)
+    pass
 
 except KeyboardInterrupt:
     leds.off()
