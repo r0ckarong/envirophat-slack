@@ -161,6 +161,7 @@ try:
 except APICallError:
     print("Error calling OWM API.")
     bot.sendMessage(user_id,"Tempi Script has crashed.")
+    requests.post(slack_webhook, json={'text':':bug: Uhoh, something has gone wrong.'})
     time.sleep(300)
     pass
 
