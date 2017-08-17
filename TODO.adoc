@@ -25,7 +25,27 @@ Reason: <urlopen error [Errno -2] Name or service not known>
 Caused by: <urlopen error [Errno -2] Name or service not known>
 ----
 ** IOError
-
+* CalledProcessError
++
+----
+vcgencmd: error while loading shared libraries: libvchiq_arm.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "tempi-script.py", line 155, in <module>
+    perform_update()
+  File "tempi-script.py", line 141, in perform_update
+    get_temps()
+  File "tempi-script.py", line 85, in get_temps
+    cpu_temp = vcgencmd.measure_temp()
+  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 58, in measure_temp
+    output = __lookup('measure_temp', [''], '')
+  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 33, in __lookup
+    return __do_command(['vcgencmd', command, src])
+  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 24, in __do_command
+    return subprocess.check_output(command).decode('utf-8')
+  File "/usr/lib/python2.7/subprocess.py", line 573, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+subprocess.CalledProcessError: Command '[u'vcgencmd', u'measure_temp', u'']' returned non-zero exit status 127
+----
 
 
 == DONE
