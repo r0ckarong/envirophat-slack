@@ -25,27 +25,45 @@ Reason: <urlopen error [Errno -2] Name or service not known>
 Caused by: <urlopen error [Errno -2] Name or service not known>
 ----
 ** IOError
-* CalledProcessError
-+
-----
-vcgencmd: error while loading shared libraries: libvchiq_arm.so: cannot open shared object file: No such file or directory
-Traceback (most recent call last):
-  File "tempi-script.py", line 155, in <module>
-    perform_update()
-  File "tempi-script.py", line 141, in perform_update
-    get_temps()
-  File "tempi-script.py", line 85, in get_temps
-    cpu_temp = vcgencmd.measure_temp()
-  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 58, in measure_temp
-    output = __lookup('measure_temp', [''], '')
-  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 33, in __lookup
-    return __do_command(['vcgencmd', command, src])
-  File "/usr/local/lib/python2.7/dist-packages/vcgencmd/vcgencmd.py", line 24, in __do_command
-    return subprocess.check_output(command).decode('utf-8')
-  File "/usr/lib/python2.7/subprocess.py", line 573, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-subprocess.CalledProcessError: Command '[u'vcgencmd', u'measure_temp', u'']' returned non-zero exit status 127
-----
+
 
 
 == DONE
+
+* socket.error
+----
+Traceback (most recent call last):
+  File "tempi-script.py", line 155, in <module>
+    perform_update()
+  File "tempi-script.py", line 140, in perform_update
+    get_condition()
+  File "tempi-script.py", line 68, in get_condition
+    observation = owm.weather_at_zip_code(zip_code,country_code)
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/webapi25/owm25.py", line 282, in weather_at_zip_code
+    'lang': self._language})
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/commons/weather_client.py", line 94, in call_API
+    return self._lookup_cache_or_invoke_API(self._cache, url, timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyowm/commons/weather_client.py", line 55, in _lookup_cache_or_invoke_API
+    response = urlopen(API_full_url, None, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1201, in do_open
+    r = h.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1121, in getresponse
+    response.begin()
+  File "/usr/lib/python2.7/httplib.py", line 438, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python2.7/httplib.py", line 394, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+socket.error: [Errno 104] Connection reset by peer
+----

@@ -165,6 +165,14 @@ except APICallError:
     time.sleep(300)
     pass
 
+except socket.error as serr:
+    if serr.errno == 104:
+        print("Error retrieving data from OWM Socket.")
+        time.sleep(300)
+        pass
+    else:
+        raise serr
+
 except KeyboardInterrupt:
     leds.off()
     out.close()
