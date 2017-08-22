@@ -150,30 +150,35 @@ def perform_update():
 # schedule.every().day.at("12:00").do(send_message)
 schedule.every().hour.at(":00").do(send_message)
 
-try:
-    while True:
-        perform_update()
+def main():
+    try:
+        while True:
+            perform_update()
 
-        schedule.run_pending()
+            schedule.run_pending()
 
-        time.sleep(30)
+            time.sleep(30)
 
-except APICallError:
-    print("Error calling OWM API.")
-    bot.sendMessage(user_id,"Tempi Script has crashed.")
-    requests.post(slack_webhook, json={'text':':bug: Uhoh, something has gone wrong.'})
-    time.sleep(300)
-    pass
-
-except socket.error as serr:
-    if serr.errno == 104:
-        print("Error retrieving data from OWM Socket.")
+    except APICallError:
+        print("Error calling OWM API.")
+        bot.sendMessage(user_id,"Tempi Script has crashed.")
+        requests.post(slack_webhook, json={'text':':bug: Uhoh, something has gone wrong.'})
         time.sleep(300)
+        main()
         pass
-    else:
-        raise serr
 
-except KeyboardInterrupt:
-    leds.off()
-    out.close()
-    # json_file.close()
+    except socket.error as serr:
+        if serr.errno == 104:
+            print("Error retrieving data from OWM Socket.")
+            time.sleep(300)
+            pass
+        else:
+            raise serr
+
+    except KeyboardInterrupt:
+        leds.off()
+        out.close()
+        # json_file.close()
+
+if __name__ == "__main__":
+    main()
