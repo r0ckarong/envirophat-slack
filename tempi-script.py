@@ -17,6 +17,11 @@ from pyowm.exceptions.api_call_error import APICallError
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+handler = logging.FileHandler('tempi.log')
+handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 # Bot stuff
 user_id = os.environ['USER_ID']
@@ -173,6 +178,7 @@ def main():
             time.sleep(30)
 
     except APICallError:
+        logger.error('Problem calling OWM API.')
         print("Error calling OWM API.")
         bot.sendMessage(user_id,"Tempi Script has crashed.")
         requests.post(slack_webhook, json={'text':':bug: Uhoh, something has gone wrong.'})
@@ -181,6 +187,7 @@ def main():
         pass
 
     except socket.error as serr:
+        logger.error('Socket Error from OWM API.')
         if serr.errno == 104:
             print("Error retrieving data from OWM Socket.")
             time.sleep(300)
@@ -189,6 +196,7 @@ def main():
             raise serr
 
     except KeyboardInterrupt:
+        logger.info('User terminated application.')
         leds.off()
         out.close()
         # json_file.close()
