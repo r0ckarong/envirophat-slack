@@ -8,10 +8,15 @@ import pyowm
 import schedule
 import ast
 import telepot
+import logging
 
 from datetime import datetime
 from envirophat import light, weather, leds
 from pyowm.exceptions.api_call_error import APICallError
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # Bot stuff
 user_id = os.environ['USER_ID']
@@ -51,6 +56,7 @@ def get_condition():
     Reads current condition and maps emoji and icons to the message which is to be sent to Slack.
     Polls the weather data from openweathermap API and returns values for global usage.
     """
+    logger.debug('Retrieving condition from OWM.')
 
     global outside_temp
     global outside_condition
@@ -77,6 +83,8 @@ def get_temps():
     """Get measured temperatures from envirophat and raspberry pi CPU sensor.
     Calculate offset measured temp. Format for further use.
     """
+    logger.debug('Calculating temperatures.')
+
     global cpu_temp
     global temp
     global tempmed
@@ -92,6 +100,8 @@ def send_message():
     """Build message string from calculated and collected values.
     Post request to Slack Webhook as JSON.
     """
+    logger.debug('Sending message to Slack.')
+
     message = """It is currently %s in :flag-"""+str(country_code)+""":%s, %s\nOutside there is "%s" (%s) at:thermometer:%s C\nInside the office we have a temperature of :thermometer:%s C"""
 
     post = message % (str(currtime), zip_code, str(outside_location), str(outside_condition.title()), str(emoji), str(outside_temp), str(tempmed))
@@ -102,6 +112,8 @@ def send_message():
     requests.post(slack_webhook, json=payload)
 
 def write_file():
+    logger.debug('Logging data to enviro.log file.')
+
     out.write('%s\t%f\t%f\t%s\t%f\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp))
 
 def write_json():
@@ -153,6 +165,7 @@ schedule.every().hour.at(":00").do(send_message)
 def main():
     try:
         while True:
+            logger.info('Performing all updates.')
             perform_update()
 
             schedule.run_pending()
@@ -179,6 +192,9 @@ def main():
         leds.off()
         out.close()
         # json_file.close()
+
+    except:
+        logger.info('Something has broken.')
 
 if __name__ == "__main__":
     main()
