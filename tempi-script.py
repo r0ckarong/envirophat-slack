@@ -17,9 +17,11 @@ from pyowm.exceptions.api_call_error import APICallError
 # Set up logging
 logging.basicConfig(filename='tempi.log',level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+handler = logging.FileHandler('tempi.log')
+handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
-
+logger.addHandler(handler)
 
 # Bot stuff
 user_id = os.environ['USER_ID']
