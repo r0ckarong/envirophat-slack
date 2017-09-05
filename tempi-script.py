@@ -170,7 +170,7 @@ schedule.every().hour.at(":00").do(send_message)
 def main():
     try:
         while True:
-            logger.info('Performing all updates.')
+            logger.debug('Performing all updates.')
             perform_update()
 
             schedule.run_pending()
