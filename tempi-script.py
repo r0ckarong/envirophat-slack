@@ -4,6 +4,7 @@ import vcgencmd
 import os
 import json
 import requests
+import socket
 import pyowm
 import schedule
 import ast
