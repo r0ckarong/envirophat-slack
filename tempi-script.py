@@ -176,7 +176,7 @@ def main():
 
             schedule.run_pending()
 
-            time.sleep(30)
+            time.sleep(300)
 
     except APICallError:
         logger.error('Problem calling OWM API.', exc_info=True)
